@@ -18,10 +18,11 @@ show_minimal: false             # remove all clutter
 # Menu                          # for available icons see https://fontawesome.com/v5/icons/
 
 navigation:                     # accepts {file, title, url, icon, sidebaricon}
+  - {file: "archive.html", title: "Home"}
   - {file: "README.md", title: "About"}
   - {file: "CV_Masoumi-Verki_Shahin.pdf", title: "CV"}
   - {file: "Projects.md", title: "Projects"}
- # - {file: "archive.html", title: "Home"}
+  
   
 
 external:                       # accepts {file, title, url, icon, sidebaricon}
