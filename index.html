@@ -1,17 +1,9 @@
 ---
 layout: default
-title: "Home"
+title: "About"
 ---
 
-{% if site.show_excerpts %}
-  {% for post in site.posts %}
-    <article>
-      {% include meta.html post=post %}
-      {{ post.excerpt }}
-      <footer><a class="button" href="{{ post.url | relative_url }}">read more</a></footer>
-    </article>
-  {% endfor %}
-{% else %}
-  {% capture source %}{% include_relative archive.html title="Posts" %}{% endcapture %}
-  {{ source | split: "---" | last }}
-{% endif %}
+<article>
+  <header><h1>Shahin Masoumi-Verki</h1></header>
+  <p>I am a data scientist and machine learning engineer specializing in Digital Twins and Dynamical Systems. Welcome to my personal website and portfolio.</p>
+</article>
