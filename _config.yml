@@ -22,7 +22,7 @@ navigation:                     # accepts {file, title, url, icon, sidebaricon}
   - {file: "README.md", title: "About", sidebaricon: address-card}
 
 external:                       # accepts {file, title, url, icon, sidebaricon}
-  - {title: Mail, icon: envelope, url: "shahinmasoumi93@gmail.com"}
+  - {title: Mail, icon: envelope, url: "mailto:shahinmasoumi93@gmail.com"}
   - {title: Github, icon: github, url: "https://github.com/shahin-smv93"}
   - {title: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/shahin-masoumi-verki-326b41116/"}
   - {title: Google Scholar, icon: google, url: "https://scholar.google.com/citations?user=jnIYq4sAAAAJ&hl=en"}
