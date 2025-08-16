@@ -1,6 +1,6 @@
-title: "Blog Title"
-author: "Blog Author"
-description: "My blog"
+title: "Shahin Masoumi-Verki"
+author: "Shahin Masoumi-Verki"
+description: "My Portfolio"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -22,8 +22,8 @@ navigation:                     # accepts {file, title, url, icon, sidebaricon}
   - {file: "README.md", sidebaricon: address-card}
 
 external:                       # accepts {file, title, url, icon, sidebaricon}
-  - {title: Mail, icon: envelope, url: "mailto:author@example.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
+  - {title: Mail, icon: envelope, url: "shahinmasoumi93@gmail.com"}
+  - {title: Github, icon: github, url: "https://github.com/shahin-smv93"}
   - {title: Subscribe, icon: rss, url: "/feed.xml"}
 
 comments:
