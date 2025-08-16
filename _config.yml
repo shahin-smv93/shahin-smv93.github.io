@@ -20,7 +20,7 @@ show_minimal: false             # remove all clutter
 navigation:                     # accepts {file, title, url, icon, sidebaricon}
 #  - {file: "archive.html", title: "Home"}
 #  - {file: "README.md", title: "About"}
-  - {file: "assets/CV_Masoumi-Verki_Shahin.pdf", title: "CV"}
+  - {file: "assets/Masoumi-Verki_Shahin_CV.pdf", title: "CV"}
   - {file: "Projects.md", title: "Projects"}
   
   
