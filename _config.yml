@@ -1,6 +1,6 @@
 title: "Shahin Masoumi-Verki"
 author: "Shahin Masoumi-Verki"
-description: "Data Scientist\nML Engineer\nDigital Twins\nDynamical Systems"
+description: "Data Scientist | ML Engineer | Digital Twins | Dynamical Systems"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -18,8 +18,9 @@ show_minimal: false             # remove all clutter
 # Menu                          # for available icons see https://fontawesome.com/v5/icons/
 
 navigation:                     # accepts {file, title, url, icon, sidebaricon}
-  - {file: "archive.html", title: "Home", sidebaricon: home}
-  - {file: "README.md", title: "About", sidebaricon: address-card}
+  - {file: "README.md", title: "About"}
+ # - {file: "archive.html", title: "Home"}
+  
 
 external:                       # accepts {file, title, url, icon, sidebaricon}
   - {title: Mail, icon: envelope, url: "mailto:shahinmasoumi93@gmail.com"}
