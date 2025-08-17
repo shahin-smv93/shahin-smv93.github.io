@@ -8,21 +8,21 @@ date_format: "%B %d, %Y"
 
 # Layout
 show_excerpts: false
-show_frame: true            # boxed page; header will be visually aligned via CSS
+show_frame: true            # keep the boxed page style
 show_sidebar: false
 show_minimal: false
 
-# Site URL (personal site)
+# Personal site config
 url: "https://shahin-smv93.github.io"
 baseurl: ""
 
-# Menu
-navigation:                 # accepts {file, title, url, icon, sidebaricon}
+# Top navigation (moved to the right via CSS)
+navigation:
   - {title: "CV", url: "/assets/Masoumi-Verki_Shahin_CV.pdf"}
   - {file: "Projects.md", title: "Projects"}
 
-# Header icons (remove to hide the icons row in header)
-external: []                # <- intentionally empty
+# Remove header social icons (we show them on the page instead)
+external: []
 
 comments:
 #  disqus_shortname: ""

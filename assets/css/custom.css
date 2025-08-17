@@ -1,34 +1,67 @@
-/* ---- Global typography ---- */
-@supports (font-variation-settings: normal) {
-    body {
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI",
-                   Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
-    }
+/* ---------- Global type & colors ---------- */
+:root {
+    --accent: #2563eb;
+    --content-width: 1100px;
   }
-  body { line-height: 1.75; }
-  :root { --accent: #2563eb; --content-width: 1100px; }
-  a { color: var(--accent); }
   
-  /* ---- Header alignment & layout ---- */
+  body {
+    line-height: 1.75;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+                 Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  }
+  
+  a {
+    color: var(--accent);
+  }
+  
+  /* ---------- Header: align with page & move nav right ---------- */
+  
+  /* Full-width header bar with subtle shadow */
   .header {
-    box-sizing: border-box;
-    padding-left: max(24px, calc((100vw - var(--content-width)) / 2));
-    padding-right: max(24px, calc((100vw - var(--content-width)) / 2));
-    box-shadow: 0 6px 20px -18px rgba(0,0,0,.6); /* subtle depth */
+    box-shadow: 0 6px 20px -18px rgba(0,0,0,.6);
+  }
+  
+  /* Box the header content to the same width as the page frame */
+  .header-inner {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 14px 24px;
     display: flex;
     align-items: center;
     gap: 18px;
   }
-  .header a:first-child { font-weight: 700; }           /* site title */
-  .header nav, .header .nav, .header .menu, .navigation {
-    margin-left: auto;                                   /* push menu to right */
+  
+  /* If your theme doesn't have .header-inner, use .header as container */
+  .header:not(:has(.header-inner)) {
+    max-width: var(--content-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
   }
   
-  /* Optional: nicer active/hover states for nav links */
-  .header nav a { border-radius: 8px; padding: 6px 10px; }
-  .header nav a:hover { background: rgba(255,255,255,.08); }
+  /* Move nav to the right */
+  .header nav,
+  .header .nav,
+  .header .menu,
+  .navigation {
+    margin-left: auto;
+  }
   
-  /* Dark mode friendly borders for buttons/boxes */
+  /* Optional: nicer hover for nav links */
+  .header nav a {
+    border-radius: 8px;
+    padding: 6px 10px;
+  }
+  .header nav a:hover {
+    background: rgba(255,255,255,.08);
+  }
+  
+  /* Buttons/cards/boxes: dark-mode border */
   @media (prefers-color-scheme: dark) {
-    .btn, .card, .box { border-color: rgba(255,255,255,0.22); }
+    .btn, .card, .box {
+      border-color: rgba(255,255,255,0.22);
+    }
   }
