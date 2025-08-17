@@ -4,9 +4,12 @@
 <meta name="color-scheme" content="light dark">
 <meta name="author" content="{{ page.author | default: site.author | escape }}">
 <meta name="generator" content="Jekyll v{{ jekyll.version }}">
+
+<!-- Inter font -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
 <link rel="canonical" href="{{ page.url | absolute_url }}">
 {%- if site.show_minimal -%}
 <link rel="stylesheet" href="{{ "/assets/css/minimal.css" | relative_url }}">
@@ -16,6 +19,10 @@
 <link rel="stylesheet" href="{{ "/assets/css/index.css" | relative_url }}">
 {%- endif -%}
 <link rel="stylesheet" href="{{ "/assets/PT-Sans/index.css" | relative_url }}">
+
+<!-- Your overrides (must come last so they win) -->
+<link rel="stylesheet" href="{{ "/assets/css/custom.css" | relative_url }}">
+
 {%- if site.plugins contains "jekyll-feed" -%}
 <link rel="alternate" href="{{ site.feed.path | default: "/feed.xml" | relative_url }}" type="application/atom+xml" title="{{ site.title }}">
 {%- endif -%}
@@ -26,7 +33,6 @@
 <script defer src="{{ "/assets/katex/contrib/auto-render.min.js" | relative_url }}" onload="renderMathInElement(document.body)"></script>
 {%- endunless -%}
 {%- endif -%}
-<link rel="stylesheet" href="{{ "/assets/css/custom.css" | relative_url }}">
 {%- if site.comments.disqus_shortname and page.layout == "post" -%}
 <script src="//{{ site.comments.disqus_shortname }}.disqus.com/embed.js" async></script>
 {%- endif -%}
