@@ -15,67 +15,49 @@
   }
   
   /* ---------- Header: align with page & move nav right ---------- */
-
-/* Full-width header bar with navy background and subtle shadow */
-.header {
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  position: relative;
-  background: #2d3143; /* navy color */
-  box-shadow: 0 6px 20px -18px rgba(0,0,0,.6);
-}
-
-/* Constrain header content to page width and use column flex layout */
-.header-inner {
-  max-width: var(--content-width);
-  margin: 0 auto;
-  padding: 24px 24px 18px 24px;
-  display: flex;
-  flex-direction: column;
-  min-height: 120px;
-}
-
-.header-inner h1 {
-  margin: 0;
-  align-self: flex-start;
-  font-size: 2.1rem;
-  font-weight: 700;
-  color: #fff;
-}
-
-.header-inner nav {
-  margin-left: auto;
-  margin-top: auto;
-  display: flex;
-  gap: 18px;
-}
-
-.header-inner nav a {
-  color: #fff;
-  border-radius: 8px;
-  padding: 6px 10px;
-  font-weight: 600;
-  text-decoration: none;
-}
-.header-inner nav a:hover {
-  background: rgba(255,255,255,.08);
-}
-
-@media (max-width: 700px) {
+  
+  /* Full-width header bar with subtle shadow */
+  .header {
+    box-shadow: 0 6px 20px -18px rgba(0,0,0,.6);
+  }
+  
+  /* Box the header content to the same width as the page frame */
   .header-inner {
-    padding: 18px 8px 12px 8px;
-    min-height: 80px;
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
   }
-  .header-inner h1 {
-    font-size: 1.3rem;
+  
+  /* If your theme doesn't have .header-inner, use .header as container */
+  .header:not(:has(.header-inner)) {
+    max-width: var(--content-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
   }
-  .header-inner nav {
-    gap: 10px;
+  
+  /* Move nav to the right */
+  .header nav,
+  .header .nav,
+  .header .menu,
+  .navigation {
+    margin-left: auto;
   }
-}
+  
+  /* Optional: nicer hover for nav links */
+  .header nav a {
+    border-radius: 8px;
+    padding: 6px 10px;
+  }
+  .header nav a:hover {
+    background: rgba(255,255,255,.08);
+  }
   
   /* Buttons/cards/boxes: dark-mode border */
   @media (prefers-color-scheme: dark) {
