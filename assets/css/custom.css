@@ -28,49 +28,53 @@
   box-shadow: 0 6px 20px -18px rgba(0,0,0,.6);
 }
 
-/* Constrain header content to page width and align nav right */
+/* Constrain header content to page width and use column flex layout */
 .header-inner {
   max-width: var(--content-width);
   margin: 0 auto;
   padding: 24px 24px 18px 24px;
   display: flex;
-  align-items: center;
-  gap: 18px;
+  flex-direction: column;
+  min-height: 120px;
 }
 
-/* If your theme doesn't have .header-inner, use .header as container */
-.header:not(:has(.header-inner)) {
-  max-width: var(--content-width);
+.header-inner h1 {
+  margin: 0;
+  align-self: flex-start;
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.header-inner nav {
   margin-left: auto;
-  margin-right: auto;
-  padding: 24px 24px 18px 24px;
+  margin-top: auto;
   display: flex;
-  align-items: center;
   gap: 18px;
 }
 
-/* Move nav to the right */
-.header-inner nav,
-.header-inner .nav,
-.header-inner .menu,
-.header-inner .navigation {
-  margin-left: auto;
-}
-
-.header:not(:has(.header-inner)) nav,
-.header:not(:has(.header-inner)) .nav,
-.header:not(:has(.header-inner)) .menu,
-.header:not(:has(.header-inner)) .navigation {
-  margin-left: auto;
-}
-
-/* Optional: nicer hover for nav links */
-.header nav a {
+.header-inner nav a {
+  color: #fff;
   border-radius: 8px;
   padding: 6px 10px;
+  font-weight: 600;
+  text-decoration: none;
 }
-.header nav a:hover {
+.header-inner nav a:hover {
   background: rgba(255,255,255,.08);
+}
+
+@media (max-width: 700px) {
+  .header-inner {
+    padding: 18px 8px 12px 8px;
+    min-height: 80px;
+  }
+  .header-inner h1 {
+    font-size: 1.3rem;
+  }
+  .header-inner nav {
+    gap: 10px;
+  }
 }
   
   /* Buttons/cards/boxes: dark-mode border */
