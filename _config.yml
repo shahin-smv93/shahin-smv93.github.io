@@ -21,7 +21,7 @@ navigation:                     # accepts {file, title, url, icon, sidebaricon}
 #  - {file: "archive.html", title: "Home"}
 #  - {file: "README.md", title: "About"}
 #  - {file: "assets/Masoumi-Verki_Shahin_CV.pdf", title: "CV"}
-  - {title: "Download CV", url: "/assets/Masoumi-Verki_Shahin_CV.pdf"}
+  - {title: "CV", url: "/assets/Masoumi-Verki_Shahin_CV.pdf"}
   - {file: "Projects.md", title: "Projects"}
   
   
