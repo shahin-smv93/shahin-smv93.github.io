@@ -8,20 +8,20 @@ date_format: "%B %d, %Y"
 
 # Layout
 show_excerpts: false
-show_frame: false            # keep the boxed page style
+show_frame: true            # keep the boxed page style
 show_sidebar: false
 show_minimal: false
 
-# Personal site config
+# Personal site
 url: "https://shahin-smv93.github.io"
 baseurl: ""
 
-# Top navigation (moved to the right via CSS)
+# Top navigation (these appear in the header)
 navigation:
   - {title: "CV", url: "/assets/Masoumi-Verki_Shahin_CV.pdf"}
   - {file: "Projects.md", title: "Projects"}
 
-# Remove header social icons (we show them on the page instead)
+# Remove header social icons (we show email/links on the page instead)
 external: []
 
 comments:
