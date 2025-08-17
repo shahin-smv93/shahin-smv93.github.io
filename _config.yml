@@ -18,7 +18,7 @@ show_minimal: false             # remove all clutter
 # Menu                          # for available icons see https://fontawesome.com/v5/icons/
 
 navigation:                     # accepts {file, title, url, icon, sidebaricon}
-  - {title: "CV", url: "https://shahin-smv93.github.io/assets/CV_Masoumi-Verki_Shahin.pdf"}
+  - {title: "CV", url: "https://github.com/shahin-smv93/shahin-smv93.github.io/blob/master/assets/Masoumi-Verki_Shahin_CV.pdf"}
   - {file: "Projects.md", title: "Projects"}
   
   
