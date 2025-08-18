@@ -15,4 +15,51 @@ body {
      .header .navigation { float: right; }
      @media (max-width: 760px){ .header .navigation { float: none; } }
   */
+
+  /* ===== NAV TO THE RIGHT (desktop), STACKED (mobile) ===== */
+
+/* Put the site title and the nav on one row */
+.header{
+    display: flex;
+    align-items: flex-end;      /* bottom-align title + nav */
+    justify-content: space-between;
+    gap: 16px;
+    padding: 18px 24px 14px;    /* keep your existing theme spacing */
+  }
+  
+  /* Make sure the links list sits on the right */
+  .header nav,
+  .header .navigation,
+  .header .menu{
+    margin-left: auto;          /* pushes nav to the right */
+  }
+  
+  /* If your theme renders a <ul> inside <nav>, keep it horizontal with spacing */
+  .header nav ul,
+  .header .navigation ul{
+    display: flex;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  /* Mobile: stack title above nav so it doesn’t squish */
+  @media (max-width: 760px){
+    .header{
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .header nav,
+    .header .navigation,
+    .header .menu{
+      margin-left: 0;
+    }
+    .header nav ul,
+    .header .navigation ul{
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+  }
   
